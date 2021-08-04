@@ -1,0 +1,850 @@
+body {
+  position: relative;
+}
+
+body #teachers {
+  text-align: center;
+  background: black;
+  font-family: "Open Sans", sans-serif;
+  padding: 6px 0;
+}
+
+@media screen and (max-width: 650px) {
+  body #teachers {
+    display: none;
+  }
+}
+
+body #teachers a {
+  font-size: 1vw;
+  font-weight: 700;
+  margin: 0 12px;
+  color: pink;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1300px) {
+  body #teachers a {
+    font-size: 1.2vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body #teachers a {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #teachers a {
+    font-size: 1.8vw;
+  }
+}
+
+body header {
+  background: pink;
+}
+
+body header .container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  body header .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body header .container {
+    width: 90%;
+  }
+}
+
+body header .container #logo {
+  flex-grow: 1;
+}
+
+body header .container #logo a img {
+  width: 38%;
+}
+
+@media screen and (max-width: 1024px) {
+  body header .container #logo a img {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  body header .container #logo a img {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body header .container #logo a img {
+    width: 30%;
+  }
+}
+
+body header .container #menu {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 860px) {
+  body header .container #menu {
+    display: none;
+  }
+}
+
+body header .container #menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  transition: .2s ease-in-out;
+  border-bottom: 2px solid pink;
+}
+
+body header .container #menu a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+body header .container #menu .active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+body header .container #order {
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 860px) {
+  body header .container #order {
+    display: none;
+  }
+}
+
+body header .container #order a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid black;
+  padding: 10px 32px;
+  transition: .2s ease-in-out;
+  border-radius: 5px;
+}
+
+body header .container #order a:hover {
+  color: pink;
+  background: black;
+}
+
+body header .container #mobile-btn {
+  display: none;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 860px) {
+  body header .container #mobile-btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body header .container #mobile-btn {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body header .container #mobile-btn {
+    font-size: 28px;
+  }
+}
+
+body header .container #mobile-btn a {
+  color: black;
+  transition: .2s ease-in-out;
+}
+
+body header .container #mobile-btn a:hover {
+  color: pink;
+  -webkit-text-stroke: 1px black;
+}
+
+body header .container #mobile-btn .mobile-open {
+  display: block;
+}
+
+body header .container #mobile-btn .mobile-close {
+  display: none;
+}
+
+body #mobile-menu {
+  display: none;
+  background: #ffb3bf;
+}
+
+body #mobile-menu .container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 12px 0;
+}
+
+body #mobile-menu .container a {
+  text-decoration: none;
+  margin: 8px 0;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2vw;
+  padding: 8px 0;
+  font-weight: 600;
+  line-height: 1.6;
+  transition: .2s ease-in-out;
+  border-bottom: 2px solid #ffb3bf;
+}
+
+@media screen and (max-width: 650px) {
+  body #mobile-menu .container a {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body #mobile-menu .container a {
+    font-size: 4vw;
+  }
+}
+
+body #mobile-menu .container a:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+body #mobile-menu .container .active {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+body #popup {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  padding-top: 7%;
+}
+
+@media screen and (max-width: 1200px) {
+  body #popup {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup {
+    padding-top: 5%;
+  }
+}
+
+body #popup .container {
+  width: 45%;
+  margin: 0 auto;
+  background: white;
+  background-color: white;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container {
+    width: 95%;
+  }
+}
+
+body #popup .container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: pink;
+  background-color: pink;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+body #popup .container .header #exit {
+  color: black;
+  font-size: 2vw;
+  right: 15px;
+  top: 10px;
+  transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container .header #exit {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container .header #exit {
+    font-size: 6vw;
+  }
+}
+
+body #popup .container .header #exit:hover {
+  -webkit-text-stroke: 1px pink;
+}
+
+body #popup .container .header img {
+  width: 9vw;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container .header img {
+    width: 11vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container .header img {
+    width: 21vw;
+  }
+}
+
+body #popup .container form {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 4% 0;
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container form {
+    width: 90%;
+  }
+}
+
+body #popup .container form h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  text-align: center;
+  padding: 16px 0 8px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container form h6 {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #popup .container form h6 {
+    font-size: 1.9vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container form h6 {
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body #popup .container form h6 {
+    font-size: 3.9vw;
+    padding-top: 0;
+  }
+}
+
+body #popup .container form p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container form p {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #popup .container form p {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container form p {
+    font-size: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body #popup .container form p {
+    font-size: 3.5vw;
+  }
+}
+
+body #popup .container form input[type='text'], body #popup .container form input[type='email'], body #popup .container form textarea {
+  margin: 8px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 400;
+  padding: 2px 8px;
+  border-radius: 3px;
+  border: 2px solid black;
+}
+
+body #popup .container form input[type='text']::placeholder, body #popup .container form input[type='email']::placeholder, body #popup .container form textarea::placeholder {
+  color: black;
+}
+
+body #popup .container form input[type='text']::-webkit-input-placeholder, body #popup .container form input[type='email']::-webkit-input-placeholder, body #popup .container form textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+body #popup .container form input[type='text']:-moz-placeholder, body #popup .container form input[type='email']:-moz-placeholder, body #popup .container form textarea:-moz-placeholder {
+  color: black;
+}
+
+body #popup .container form input[type='text']::-moz-placeholder, body #popup .container form input[type='email']::-moz-placeholder, body #popup .container form textarea::-moz-placeholder {
+  color: black;
+}
+
+body #popup .container form input[type='text']:-ms-input-placeholder, body #popup .container form input[type='email']:-ms-input-placeholder, body #popup .container form textarea:-ms-input-placeholder {
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container form input[type='text'], body #popup .container form input[type='email'], body #popup .container form textarea {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #popup .container form input[type='text'], body #popup .container form input[type='email'], body #popup .container form textarea {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container form input[type='text'], body #popup .container form input[type='email'], body #popup .container form textarea {
+    font-size: 2.8vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body #popup .container form input[type='text'], body #popup .container form input[type='email'], body #popup .container form textarea {
+    font-size: 3.8vw;
+  }
+}
+
+body #popup .container form textarea {
+  margin-bottom: 16px;
+}
+
+body #popup .container form textarea::placeholder {
+  color: black;
+}
+
+body #popup .container form textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+body #popup .container form textarea:-moz-placeholder {
+  color: black;
+}
+
+body #popup .container form textarea::-moz-placeholder {
+  color: black;
+}
+
+body #popup .container form textarea:-ms-input-placeholder {
+  color: black;
+}
+
+body #popup .container form input[type="button"] {
+  color: black;
+  font-size: 1.4vw;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background: pink;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  padding: 6px 0;
+  margin-top: 16px;
+  width: 30%;
+  margin: 0 auto;
+  transition: .3s ease-in-out;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  body #popup .container form input[type="button"] {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body #popup .container form input[type="button"] {
+    font-size: 1.9vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body #popup .container form input[type="button"] {
+    font-size: 2.9vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body #popup .container form input[type="button"] {
+    font-size: 3.9vw;
+    width: 50%;
+  }
+}
+
+body #popup .container form input[type="button"]:hover {
+  color: pink;
+  background-color: black;
+}
+
+body main #contact .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 80px 0 26px;
+}
+
+@media screen and (max-width: 1024px) {
+  body main #contact .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #contact .container {
+    width: 90%;
+    padding-top: 48px;
+  }
+}
+
+body main #contact .container h1 {
+  text-align: center;
+  font-size: 4.5vw;
+  font-family: "Flavors", cursive;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  body main #contact .container h1 {
+    font-size: 5.3vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #contact .container h1 {
+    font-size: 6.5vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body main #contact .container h1 {
+    font-size: 7.5vw;
+  }
+}
+
+body main #contact .container p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 1.5vw;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  padding: 26px 16px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+  body main #contact .container p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body main #contact .container p {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body main #contact .container p {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #contact .container p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body main #contact .container p {
+    font-size: 3.5vw;
+  }
+}
+
+body main #contact .container p span {
+  font-weight: 900;
+}
+
+body main #contact .container p .break {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  body main #contact .container p .break {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body main #contact .container p .split {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body main #contact .container .contact-info {
+    line-height: 2;
+    padding: 0;
+  }
+}
+
+body main #contact-forum .container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  body main #contact-forum .container {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #contact-forum .container {
+    width: 90%;
+  }
+}
+
+body main #contact-forum .container .icons {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+body main #contact-forum .container .icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  margin: 0 18px;
+  transition: .2s ease-in-out;
+}
+
+body main #contact-forum .container .icons a:hover {
+  color: pink;
+}
+
+body main #contact-forum .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  body main #contact-forum .container form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #contact-forum .container form {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+}
+
+body main #contact-forum .container form input[type="text"], body main #contact-forum .container form input[type="email"] {
+  font-size: 18px;
+  margin: 8px 0;
+  padding: 6px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+body main #contact-forum .container form textarea {
+  margin-top: 8px;
+  padding: 6px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+body main #contact-forum .container form input[type=button] {
+  width: 120px;
+  margin: 16px auto;
+  height: 40px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: black;
+  background-color: black;
+  border: 2px solid black;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  transition: .3s ease-in-out;
+}
+
+body main #contact-forum .container form input[type=button]:hover {
+  color: black;
+  background: pink;
+}
+
+body main #contact-img {
+  background-image: url("../images/contact-img.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 450px;
+}
+
+@media screen and (max-width: 1024px) {
+  body main #contact-img {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body main #contact-img {
+    height: 250px;
+  }
+}
+
+body footer {
+  background: pink;
+  background-color: pink;
+}
+
+body footer .container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+body footer .container .lower-logo img {
+  width: 8vw;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  body footer .container .lower-logo img {
+    width: 10vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body footer .container .lower-logo img {
+    width: 12vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body footer .container .lower-logo img {
+    width: 16vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body footer .container .lower-logo img {
+    width: 22vw;
+  }
+}
+
+body footer .container .icons {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+body footer .container .icons a {
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  margin: 0 18px;
+  transition: .2s ease-in-out;
+}
+
+body footer .container .icons a:hover {
+  color: pink;
+  -webkit-text-stroke: 1px black;
+}
+
+body footer .container p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-size: 16px;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bontanas & Board specialty charcuterie board companny serving custom charcuterie boards in Katy TX, and surrounding Houston Tx, areas.">
+    <title>Bontanas & Boards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Flavors&display&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="shortcut icon" href="images/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" size="192x192" href="images/favicon_io/android-chrome-192x192.png">
+</head>
+
+<body>
+    <!-- start of teachers-article -->
+    <article id="teachers">
+        <a href="#" onclick="popup()">BACK TO SCHOOL TEACHERS BOX ORDER NOW!</a>
+    </article>
+    <!-- start of header -->
+    <header>
+        <!-- start of container -->
+        <div class="container">
+            <!-- start of logo -->
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logos/logo5.svg" alt="This is the Crave charcuterie treats logo image.">
+                </a>
+            </div>
+            <!-- end of logo -->
+            <!-- start of menu -->
+            <nav id="menu">
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <!-- end of menu -->
+            <!-- start of order -->
+            <div id="order">
+                <a href="#" onclick="popup()">Order Now!</a>
+            </div>
+            <!-- end of order -->
+            <!-- start of mobile-btn -->
+            <div id="mobile-btn">
+                <a href="#" onclick="mobile_menu()" class="mobile-open"><i class="fa fa-bars"
+                        aria-hidden="true"></i></a>
+                <a href="#" onclick="mobile_menu()" class="mobile-close"><i class="fa fa-times"
+                        aria-hidden="true"></i></a>
+            </div>
+            <!-- end of mobile-btn -->
+        </div>
+        <!-- end of container -->
+    </header>
+    <!-- end of header -->
+
+    <!-- start of mobile-menu-nav -->
+    <nav id="mobile-menu">
+        <!-- start of container -->
+        <div class="container">
+            <a href="menu.html" class="active">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#" onclick="popup()">Order Now!</a>
+        </div>
+        <!-- end of container -->
+    </nav>
+    <!-- end of mobile-menu-nav -->
+
+    <!-- start of popup-article -->
+    <article id="popup">
+        <div class="container">
+            <!-- start of header -->
+            <div class="header">
+                <img src="images/logos/logo5.svg" alt="This is the Botanas and Boards packaging logo image.">
+                <a href="#" id="exit" onclick="popdown()"><i class="fa fa-times-circle-o" aria-hidden="true"></i></a>
+            </div>
+            <!-- end of header -->
+            <form action="#" method="post">
+
+                <h6>Submit the form below to place your custom order!</h6>
+                <p>
+                    All orders within a 10 mile radius of Katy TX will receive free delivery and every 10 miles
+                    exceeding that is an additional $10. Please place order at least 48 hours prior to delivery or
+                    pickup.
+                </p>
+                <input type="text" name="name" placeholder="Names:">
+                <input type="email" name="email" placeholder="Email:">
+                <input type="text" name="subject" placeholder="Subject:">
+                <textarea name="message" placeholder="Type your message here..." rows="5"></textarea>
+                <input type="button" value="Submit">
+            </form>
+        </div>
+    </article>
+    <!-- end of popup-article -->
+
+    <!-- start of main-area -->
+    <main id="menu-main-area">
+        <!-- start of menu-section  -->
+        <section id="menu">
+            <!-- start of container -->
+            <div class="container">
+                <h1>Made to order</h1>
+                <p>
+                    Fresh tastes better. That's why everything on our menu is made with ingredients from local farms,
+                    delivered daily. We start cutting after you order, so you get the hottest meal every time.
+                </p>
+                <!-- start of items -->
+                <div id="items">
+                    <!-- star of item1 -->
+                    <div class="item">
+                        <h4>Small Box</h4>
+                        <p><span>$50</span> | Perfect for date or family night, serving up to 4 people.</p>
+                    </div>
+                    <!-- end of item1 -->
+
+                    <!-- star of item2 -->
+                    <div class="item">
+                        <h4>Medium Box</h4>
+                        <p><span>$75</span> | Will serve a small gathering of 4-6 people. </p>
+                    </div>
+                    <!-- end of item2 -->
+
+
+                    <!-- star of item3 -->
+                    <div class="item">
+                        <h4>Large Box</h4>
+                        <p>
+                            <span>$120</span> | Meant to be shared with a larger group of people, will serve up to 12
+                            people.
+                        </p>
+                    </div>
+                    <!-- end of item3 -->
+
+                    <!-- star of item4 -->
+                    <div class="item">
+                        <h4>Celebration Platter</h4>
+                        <p>
+                            <span>$140</span> | Meant to be shared with a larger group of people, will serve up to 15
+                            people.
+                        </p>
+                    </div>
+                    <!-- end of item4 -->
+
+                    <!-- star of item5 -->
+                    <div class="item">
+                        <h4>Half-Dozen Mini Boxes</h4>
+                        <p>
+                            <span>$80</span> | 6 individual snack servings in adorable tiny boxes meant for gifting!
+                        </p>
+                    </div>
+                    <!-- end of item5 -->
+
+
+                    <!-- star of item6 -->
+                    <div class="item">
+                        <h4>Dozen Mini Boxes</h4>
+                        <p>
+                            <span>$150</span> | 12 individual snack servings in adorable tiny boxes meant for gifting!
+                        </p>
+                    </div>
+                    <!-- end of item6 -->
+
+
+
+                </div>
+                <!-- end of items -->
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- end of menu-section -->
+
+        <!-- start of salivating -->
+        <section id="salivating">
+            <!-- start of container -->
+            <div class="container">
+                <h2>Salivating yet?</h2>
+                <p>Contact us, we can fix that!</p>
+                <a href="#" onclick="popup()">Order Now!</a>
+            </div>
+            <!-- end of container -->
+        </section>
+        <!-- end of salivating -->
+    </main>
+    <!-- end of main-area -->
+    <!-- start of footer -->
+    <footer>
+        <div class="container">
+            <a href="index.html" class="lower-logo">
+                <img src="images/logos/logo5.svg" alt="This is a clikable Botanas and Boards packaging logo image.">
+            </a>
+            <!-- start of icons -->
+            <div class="icons">
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <!-- end of icons -->
+            <p>© 2021 All Rights Reserved </p>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- end of footer -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
