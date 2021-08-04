@@ -764,7 +764,7 @@ body main #contact-forum .container form input[type=button]:hover {
 }
 
 body main #contact-img {
-  background-image: url("../images/contact-img.jpg");
+  background-image: url("../images/contact-img.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

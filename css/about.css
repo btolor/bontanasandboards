@@ -644,7 +644,7 @@ body main #story .container p {
 }
 
 body main #about-img {
-  background-image: url("../images/about.jpg");
+  background-image: url("../images/about.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

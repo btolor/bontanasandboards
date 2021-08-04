@@ -270,13 +270,15 @@ body
         position: relative
         // Gather Section Styles...
         #gather
-            background-image: url('../images/gather-section.jpg')
+            background-image: url('../images/platter.webp')
             background-size: cover
             background-position: center center
             background-repeat: no-repeat      
             height: 450px
             @include media-max(1024px)
                 height: 360px
+            @include media-max(650px)
+                background-image: url('../images/mobile-platter.webp')
             .container
                 @include center(75%, 0 auto)
                 padding: 60px 0
@@ -579,7 +581,7 @@ body
                                 font-size: 3.7vw
         // Sub-footer Styles...
         #sub-footer 
-            background-image: url('../images/sub-footer.jpg') 
+            background-image: url('../images/sub-footer.webp') 
             height: 450px  
             background-size: cover
             background-position: center center
