@@ -504,7 +504,7 @@ body #popup .container form textarea:-ms-input-placeholder {
   color: black;
 }
 
-body #popup .container form input[type="button"] {
+body #popup .container form input[type="submit"] {
   color: black;
   font-size: 1.4vw;
   font-family: "Open Sans", sans-serif;
@@ -522,31 +522,31 @@ body #popup .container form input[type="button"] {
 }
 
 @media screen and (max-width: 1024px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 1.7vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 2.9vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 3.9vw;
     width: 50%;
   }
 }
 
-body #popup .container form input[type="button"]:hover {
+body #popup .container form input[type="submit"]:hover {
   color: pink;
   background-color: black;
 }
@@ -741,7 +741,7 @@ body main #contact-forum .container form textarea {
   border-radius: 3px;
 }
 
-body main #contact-forum .container form input[type=button] {
+body main #contact-forum .container form input[type="submit"] {
   width: 120px;
   margin: 16px auto;
   height: 40px;
@@ -758,7 +758,7 @@ body main #contact-forum .container form input[type=button] {
   transition: .3s ease-in-out;
 }
 
-body main #contact-forum .container form input[type=button]:hover {
+body main #contact-forum .container form input[type="submit"]:hover {
   color: black;
   background: pink;
 }

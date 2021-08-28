@@ -504,7 +504,7 @@ body #popup .container form textarea:-ms-input-placeholder {
   color: black;
 }
 
-body #popup .container form input[type="button"] {
+body #popup .container form input[type="submit"] {
   color: black;
   font-size: 1.4vw;
   font-family: "Open Sans", sans-serif;
@@ -522,31 +522,31 @@ body #popup .container form input[type="button"] {
 }
 
 @media screen and (max-width: 1024px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 1.7vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 2.9vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 3.9vw;
     width: 50%;
   }
 }
 
-body #popup .container form input[type="button"]:hover {
+body #popup .container form input[type="submit"]:hover {
   color: pink;
   background-color: black;
 }
@@ -1797,7 +1797,7 @@ body #popup .container form textarea:-ms-input-placeholder {
   color: black;
 }
 
-body #popup .container form input[type="button"] {
+body #popup .container form input[type="submit"] {
   color: black;
   font-size: 1.4vw;
   font-family: "Open Sans", sans-serif;
@@ -1815,37 +1815,37 @@ body #popup .container form input[type="button"] {
 }
 
 @media screen and (max-width: 1024px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 1.7vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 1.9vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 2.9vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body #popup .container form input[type="button"] {
+  body #popup .container form input[type="submit"] {
     font-size: 3.9vw;
     width: 50%;
   }
 }
 
-body #popup .container form input[type="button"]:hover {
+body #popup .container form input[type="submit"]:hover {
   color: pink;
   background-color: black;
 }
 
 body main #menu {
-  background-image: url("../images/menu.jpg");
+  background-image: url("../images/menu.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
