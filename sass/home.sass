@@ -37,13 +37,13 @@ body
             #logo 
                 flex-grow: 1
                 a img 
-                    width: 38%
+                    width: 25%
                     @include media-max(1024px)
-                        width: 45%
-                    @include media-max(860px)
-                        width: 25%
-                    @include media-max(650px)
                         width: 30%
+                    @include media-max(860px)
+                        width: 15%
+                    @include media-max(650px)
+                        width: 18%
             // Navigation Menu Styles...
             #menu
                 flex-grow: 1
@@ -155,16 +155,18 @@ body
             @include media-max(650px)
                 width: 95%
             .header
-                @include fullFlex(flex, row, space-between)
+                @include fullFlex(flex, row,center)
                 background: pink 
                 background-color: pink 
                 align-items: center
-                padding: 12px 24px
+                padding: 0 24px
+                position: relative
                 #exit
                     color: black
                     font-size: 2vw
                     right: 15px
                     top: 10px
+                    position: absolute
                     transition: .3s ease-in-out
                     @include media-max(1024px)
                         font-size: 3vw
@@ -306,6 +308,7 @@ body
                         font-size: 3vw
                         color: black
                         letter-spacing: 4px
+                        font-weight: 700
                         @include media-max(800px)
                             font-size: 4vw
                         @include media-max(650px)
@@ -378,6 +381,7 @@ body
                     color: black
                     font-size: 3vw
                     letter-spacing: 4px
+                    font-weight: 700
                     @include center(80%, 0 auto)
                     padding-bottom: 26px
                     @include media-max(1024px)
@@ -389,7 +393,7 @@ body
                         width: 95%
                     @include media-max(450px)
                         font-size: 6vw               
-                p 
+                p
                     font-family: $text-font
                     color: black
                     font-weight: 300
@@ -408,6 +412,27 @@ body
                         width: 100%
                     @include media-max(450px)
                         font-size: 4vw
+                ul 
+                    font-family: $text-font
+                    color: black
+                    font-weight: 600
+                    font-size: 1.3vw
+                    letter-spacing: 4px
+                    line-height: 1.6
+                    padding: 8px 0
+                    @include center(50%, 0 auto)
+                    @include media-max(1024px)
+                        width: 75%
+                        font-size: 1.6vw
+                    @include media-max(800px)
+                        font-size: 1.8vw
+                    @include media-max(650px)
+                        font-size: 2.8vw
+                        width: 80%
+                    @include media-max(450px)
+                        font-size: 3.8vw
+                    li 
+                        padding-bottom: 6px
         #from
             background: pink
             .container  
@@ -431,6 +456,7 @@ body
                         font-size: 3vw
                         letter-spacing: 4px
                         padding-bottom: 26px
+                        font-weight: 700
                         @include media-max(975px)
                             padding-bottom: 16px
                         @include media-max(800px)
@@ -486,20 +512,30 @@ body
                             background: pink
                 #img-content 
                     width: 40%
+                    text-align: right
                     @include media-max(650px)
                         width: 100%
-                    img
+                        text-align: center
+                    .desk-img
+                        width: 90%
+                        border-radius: 3px
+                        vertical-align: bottom
+                        @include media-max(650px)
+                            display: none
+                    .mobile-img
                         width: 100%
                         border-radius: 3px
+                        display: none
                         @include media-max(650px)
                             padding-top: 15%
+                            display: block
         //Wakeup Styles...
         #wakeup 
             background: white
             background-color: white
             .container
                 @include center(75%, 0 auto)
-                padding: 80px 0
+                padding: 80px 0 30px
                 @include media-max(1024px)
                     width: 84%
                     padding-bottom: 1%
@@ -510,6 +546,7 @@ body
                     font-size: 3vw
                     letter-spacing: 4px
                     padding-bottom: 18px  
+                    font-weight: 700
                     @include media-max(800px)
                         font-size: 3.8vw
                     @include media-max(650px)
@@ -542,8 +579,10 @@ body
                         flex-direction: column
                     .serv 
                         text-align: center
+                        width: 45%
                         @include media-max(650px)
                             margin-top: 4%
+                            width: 100%
                         img 
                             width: 80%
                             border-radius: 3px
@@ -554,6 +593,7 @@ body
                             color: black
                             font-size: 1.8vw
                             letter-spacing: 4px
+                            font-weight: 700
                             padding: 26px 0 16px
                             @include media-max(800px)
                                 font-size: 2.4vw
@@ -627,5 +667,9 @@ body
                 font-size: 16px
 .spam-filter
     margin: 0 auto 10px            
-            
-
+@media(max-width: 380px)
+    .g-recaptcha
+        transform:scale(0.75)
+        -webkit-transform:scale(0.75)
+        transform-origin: 0 0
+        -webkit-transform-origin: 0 0

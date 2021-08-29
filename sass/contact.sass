@@ -37,13 +37,13 @@ body
             #logo 
                 flex-grow: 1
                 a img 
-                    width: 38%
+                    width: 25%
                     @include media-max(1024px)
-                        width: 45%
-                    @include media-max(860px)
-                        width: 25%
-                    @include media-max(650px)
                         width: 30%
+                    @include media-max(860px)
+                        width: 15%
+                    @include media-max(650px)
+                        width: 18%
             // Navigation Menu Styles...
             #menu
                 flex-grow: 1
@@ -155,17 +155,19 @@ body
             @include media-max(650px)
                 width: 95%
             .header
-                @include fullFlex(flex, row, space-between)
+                @include fullFlex(flex, row, center)
                 background: pink 
                 background-color: pink 
                 align-items: center
-                padding: 12px 24px
+                padding: 0 24px
+                position: relative
                 #exit
                     color: black
                     font-size: 2vw
                     right: 15px
                     top: 10px
                     transition: .3s ease-in-out
+                    position: absolute
                     @include media-max(1024px)
                         font-size: 3vw
                     @include media-max(650px)
@@ -274,11 +276,14 @@ body
                 @include media-max(650px)
                     width: 90%
                     padding-top: 48px
+                    padding-bottom: 0
                 h1
                     text-align: center
                     font-size: 4.5vw
                     font-family: $header-font
                     letter-spacing: 4px
+                    padding-bottom: 22px
+                    font-weight: 700
                     @include media-max(800px)
                         font-size: 5.3vw
                     @include media-max(650px)
@@ -293,7 +298,7 @@ body
                     font-size: 1.5vw
                     letter-spacing: 4px
                     line-height: 1.6
-                    padding: 26px 16px
+                    padding: 12px 16px
                     @include center(85%, 0 auto)
                     @include media-max(1400px)
                         width: 100%
@@ -305,15 +310,31 @@ body
                         font-size: 3vw
                     @include media-max(450px)
                         font-size: 3.5vw
-                    span 
-                        font-weight: 900
-                    .break
-                        display: none
-                        @include media-max(900px)
-                            display: block
-                    .split
-                        @include media-max(900px)
-                            display: none
+                        padding-botttom: 0
+                ul
+                    list-style: none 
+                    text-align: center
+                    padding: 12px 
+                    @include center(60%, 0 auto)
+                    @include media-max(450px)
+                        width: 90%
+                    li 
+                        font-size: 1.8vw
+                        font-family: $text-font 
+                        padding: 12px 
+                        @include media-max(1024px)
+                            font-size: 2.1vw
+                        @include media-max(800px)
+                            font-size: 2.3vw
+                        @include media-max(650px)
+                            font-size: 3.3vw
+                        @include media-max(450px)
+                            font-size: 4.3vw
+                        span 
+                            color: pink
+                        a 
+                            text-decoration: none 
+                            color: pink
                 .contact-info
                     @include media-max(900px)
                         line-height: 2
@@ -427,5 +448,10 @@ body
                 color: black
                 font-size: 16px
 .spam-filter
-    margin: 0 auto 10px
-                  
+    margin: 0 auto 10px            
+@media(max-width: 380px)
+    .g-recaptcha
+        transform:scale(0.75)
+        -webkit-transform:scale(0.75)
+        transform-origin: 0 0
+        -webkit-transform-origin: 0 0
