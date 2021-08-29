@@ -72,24 +72,24 @@ body header .container #logo {
 }
 
 body header .container #logo a img {
-  width: 38%;
+  width: 25%;
 }
 
 @media screen and (max-width: 1024px) {
   body header .container #logo a img {
-    width: 45%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 860px) {
   body header .container #logo a img {
-    width: 25%;
+    width: 15%;
   }
 }
 
 @media screen and (max-width: 650px) {
   body header .container #logo a img {
-    width: 30%;
+    width: 18%;
   }
 }
 
@@ -290,11 +290,12 @@ body #popup .container {
 body #popup .container .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background: pink;
   background-color: pink;
   align-items: center;
-  padding: 12px 24px;
+  padding: 0 24px;
+  position: relative;
 }
 
 body #popup .container .header #exit {
@@ -302,6 +303,7 @@ body #popup .container .header #exit {
   font-size: 2vw;
   right: 15px;
   top: 10px;
+  position: absolute;
   transition: .3s ease-in-out;
 }
 
@@ -577,9 +579,10 @@ body main #story .container {
 body main #story .container h1 {
   text-align: center;
   font-size: 4.5vw;
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   letter-spacing: 4px;
   padding: 20px 0;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -658,6 +661,7 @@ body main #about-img {
 }
 
 body main #service-area .container {
+  text-align: center;
   width: 75%;
   margin: 0 auto;
   padding: 80px 0;
@@ -678,9 +682,10 @@ body main #service-area .container {
 body main #service-area .container h1 {
   text-align: center;
   font-size: 4.5vw;
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   letter-spacing: 4px;
   padding-bottom: 26px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -701,180 +706,171 @@ body main #service-area .container h1 {
   }
 }
 
-body main #service-area .container #blocks {
+body main #service-area .container .block-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
-  padding: 18px 0 0;
 }
 
 @media screen and (max-width: 650px) {
-  body main #service-area .container #blocks {
+  body main #service-area .container .block-container {
     flex-direction: column;
   }
 }
 
-body main #service-area .container #blocks .block {
-  width: 45%;
+body main #service-area .container .block-container #blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 0 0;
 }
 
-@media screen and (max-width: 1024px) {
-  body main #service-area .container #blocks .block {
-    width: 50%;
-  }
+body main #service-area .container .block-container #blocks .block {
+  width: 100%;
+  text-align: center;
 }
 
-@media screen and (max-width: 650px) {
-  body main #service-area .container #blocks .block {
-    width: 100%;
-  }
-}
-
-body main #service-area .container #blocks .block img {
+body main #service-area .container .block-container #blocks .block img {
   width: 32vw;
   filter: grayscale(100%);
 }
 
 @media screen and (max-width: 1024px) {
-  body main #service-area .container #blocks .block img {
+  body main #service-area .container .block-container #blocks .block img {
     width: 35vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block img {
+  body main #service-area .container .block-container #blocks .block img {
     width: 39vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body main #service-area .container #blocks .block img {
+  body main #service-area .container .block-container #blocks .block img {
     width: 100%;
   }
 }
 
-body main #service-area .container #blocks .block h3 {
+body main #service-area .container .block-container #blocks .block h3 {
   font-size: 1.8vw;
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   letter-spacing: 4px;
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block h3 {
+  body main #service-area .container .block-container #blocks .block h3 {
     font-size: 2.4vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body main #service-area .container #blocks .block h3 {
+  body main #service-area .container .block-container #blocks .block h3 {
     font-size: 3.6vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body main #service-area .container #blocks .block h3 {
+  body main #service-area .container .block-container #blocks .block h3 {
     font-size: 4.6vw;
   }
 }
 
-body main #service-area .container #blocks .block .hour {
-  padding-top: 52px;
-}
-
-@media screen and (max-width: 1024px) {
-  body main #service-area .container #blocks .block .hour {
-    padding-top: 36px;
+@media screen and (max-width: 650px) {
+  body main #service-area .container .block-container #blocks #text-block {
+    padding-top: 5%;
+    text-align: center;
   }
 }
 
-@media screen and (max-width: 850px) {
-  body main #service-area .container #blocks .block .hour {
-    padding-top: 18px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block .hour {
-    padding-top: 4px;
-  }
-}
-
-body main #service-area .container #blocks .block p {
+body main #service-area .container p {
   font-family: "Open Sans", sans-serif;
   color: black;
+  text-align: center;
   font-weight: 300;
   font-size: 1.2vw;
   letter-spacing: 4px;
-  line-height: 1.6;
+  line-height: 1.8;
   padding: 8px 0;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 1500px) {
+  body main #service-area .container p {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  body main #service-area .container #blocks .block p {
-    font-size: 1.5vw;
+  body main #service-area .container p {
+    font-size: 1.7vw;
     padding: 4px 0;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block p {
-    font-size: 1.8vw;
+  body main #service-area .container p {
+    font-size: 2vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body main #service-area .container #blocks .block p {
-    font-size: 2.8vw;
+  body main #service-area .container p {
+    font-size: 3vw;
+    margin-top: 16px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body main #service-area .container #blocks .block p {
-    font-size: 3.8vw;
+  body main #service-area .container p {
+    font-size: 4vw;
   }
 }
 
-body main #service-area .container #blocks .block p span {
+body main #service-area .container p span {
   font-weight: 600;
   font-size: 1vw;
 }
 
 @media screen and (max-width: 1024px) {
-  body main #service-area .container #blocks .block p span {
+  body main #service-area .container p span {
     font-size: 1.3vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block p span {
+  body main #service-area .container p span {
     font-size: 1.5vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body main #service-area .container #blocks .block p span {
+  body main #service-area .container p span {
     font-size: 2.5vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body main #service-area .container #blocks .block p span {
+  body main #service-area .container p span {
     font-size: 3.5vw;
   }
 }
 
-body main #service-area .container #blocks .block .last {
-  padding-bottom: 46px;
+body main #service-area .container .last {
+  padding-bottom: 40px;
 }
 
-@media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block .last {
-    padding-bottom: 28px;
+@media screen and (max-width: 650px) {
+  body main #service-area .container .last {
+    padding-bottom: 30px;
   }
 }
 
-body main #service-area .container #blocks .block a {
+body main #service-area .container a {
   text-decoration: none;
   color: white;
   font-size: 1.2vw;
@@ -884,45 +880,38 @@ body main #service-area .container #blocks .block a {
   border-radius: 5px;
   border: 2px solid black;
   letter-spacing: 2px;
-  padding: 2.25% 12%;
+  padding: 1.25% 8%;
   margin-top: 40px;
   transition: .3s ease-in-out;
 }
 
 @media screen and (max-width: 1024px) {
-  body main #service-area .container #blocks .block a {
+  body main #service-area .container a {
     font-size: 1.5vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  body main #service-area .container #blocks .block a {
+  body main #service-area .container a {
     font-size: 1.7vw;
   }
 }
 
 @media screen and (max-width: 650px) {
-  body main #service-area .container #blocks .block a {
+  body main #service-area .container a {
     font-size: 2.7vw;
   }
 }
 
 @media screen and (max-width: 450px) {
-  body main #service-area .container #blocks .block a {
+  body main #service-area .container a {
     font-size: 3.7vw;
   }
 }
 
-body main #service-area .container #blocks .block a:hover {
+body main #service-area .container a:hover {
   color: black;
   background: pink;
-}
-
-@media screen and (max-width: 650px) {
-  body main #service-area .container #blocks #text-block {
-    padding-top: 5%;
-    text-align: center;
-  }
 }
 
 body footer {
@@ -1005,4 +994,11 @@ body footer .container p {
 
 .spam-filter {
   margin: 0 auto 10px;
+}
+
+@media (max-width: 380px) {
+  .g-recaptcha {
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
 }

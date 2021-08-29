@@ -72,24 +72,24 @@ body header .container #logo {
 }
 
 body header .container #logo a img {
-  width: 38%;
+  width: 25%;
 }
 
 @media screen and (max-width: 1024px) {
   body header .container #logo a img {
-    width: 45%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 860px) {
   body header .container #logo a img {
-    width: 25%;
+    width: 15%;
   }
 }
 
 @media screen and (max-width: 650px) {
   body header .container #logo a img {
-    width: 30%;
+    width: 18%;
   }
 }
 
@@ -290,11 +290,12 @@ body #popup .container {
 body #popup .container .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background: pink;
   background-color: pink;
   align-items: center;
-  padding: 12px 24px;
+  padding: 0 24px;
+  position: relative;
 }
 
 body #popup .container .header #exit {
@@ -303,6 +304,7 @@ body #popup .container .header #exit {
   right: 15px;
   top: 10px;
   transition: .3s ease-in-out;
+  position: absolute;
 }
 
 @media screen and (max-width: 1024px) {
@@ -561,14 +563,17 @@ body main #contact .container {
   body main #contact .container {
     width: 90%;
     padding-top: 48px;
+    padding-bottom: 0;
   }
 }
 
 body main #contact .container h1 {
   text-align: center;
   font-size: 4.5vw;
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   letter-spacing: 4px;
+  padding-bottom: 22px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -597,7 +602,7 @@ body main #contact .container p {
   font-size: 1.5vw;
   letter-spacing: 4px;
   line-height: 1.6;
-  padding: 26px 16px;
+  padding: 12px 16px;
   width: 85%;
   margin: 0 auto;
 }
@@ -629,27 +634,61 @@ body main #contact .container p {
 @media screen and (max-width: 450px) {
   body main #contact .container p {
     font-size: 3.5vw;
+    padding-botttom: 0;
   }
 }
 
-body main #contact .container p span {
-  font-weight: 900;
+body main #contact .container ul {
+  list-style: none;
+  text-align: center;
+  padding: 12px;
+  width: 60%;
+  margin: 0 auto;
 }
 
-body main #contact .container p .break {
-  display: none;
-}
-
-@media screen and (max-width: 900px) {
-  body main #contact .container p .break {
-    display: block;
+@media screen and (max-width: 450px) {
+  body main #contact .container ul {
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 900px) {
-  body main #contact .container p .split {
-    display: none;
+body main #contact .container ul li {
+  font-size: 1.8vw;
+  font-family: "Open Sans", sans-serif;
+  padding: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  body main #contact .container ul li {
+    font-size: 2.1vw;
   }
+}
+
+@media screen and (max-width: 800px) {
+  body main #contact .container ul li {
+    font-size: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #contact .container ul li {
+    font-size: 3.3vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body main #contact .container ul li {
+    font-size: 4.3vw;
+  }
+}
+
+body main #contact .container ul li span {
+  color: pink;
+}
+
+body main #contact .container ul li a {
+  text-decoration: none;
+  color: pink;
 }
 
 @media screen and (max-width: 900px) {
@@ -845,4 +884,11 @@ body footer .container p {
 
 .spam-filter {
   margin: 0 auto 10px;
+}
+
+@media (max-width: 380px) {
+  .g-recaptcha {
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
 }

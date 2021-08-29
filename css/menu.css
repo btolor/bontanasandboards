@@ -72,24 +72,24 @@ body header .container #logo {
 }
 
 body header .container #logo a img {
-  width: 38%;
+  width: 25%;
 }
 
 @media screen and (max-width: 1024px) {
   body header .container #logo a img {
-    width: 45%;
+    width: 30%;
   }
 }
 
 @media screen and (max-width: 860px) {
   body header .container #logo a img {
-    width: 25%;
+    width: 15%;
   }
 }
 
 @media screen and (max-width: 650px) {
   body header .container #logo a img {
-    width: 30%;
+    width: 18%;
   }
 }
 
@@ -290,11 +290,12 @@ body #popup .container {
 body #popup .container .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background: pink;
   background-color: pink;
   align-items: center;
-  padding: 12px 24px;
+  padding: 0 24px;
+  position: relative;
 }
 
 body #popup .container .header #exit {
@@ -302,6 +303,7 @@ body #popup .container .header #exit {
   font-size: 2vw;
   right: 15px;
   top: 10px;
+  position: absolute;
   transition: .3s ease-in-out;
 }
 
@@ -545,11 +547,14 @@ body #popup .container form input[type="submit"]:hover {
   background-color: black;
 }
 
-body main #menu {
+body main {
   background-image: url("../images/menu.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+body main #menu {
   padding: 52px 0;
 }
 
@@ -578,10 +583,11 @@ body main #menu .container {
 
 body main #menu .container h1 {
   text-align: center;
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 4.5vw;
   letter-spacing: 4px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -673,9 +679,10 @@ body main #menu .container #items .item {
 }
 
 body main #menu .container #items .item h4 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 1.8vw;
+  font-weight: 700;
   letter-spacing: 4px;
 }
 
@@ -738,6 +745,85 @@ body main #menu .container #items .item p span {
   letter-spacing: 0;
 }
 
+body main #menu .container .pricing {
+  border-top: 1px solid black;
+  padding-top: 26px;
+}
+
+body main #menu .container .pricing h4 {
+  font-family: "Dancing Script", cursive;
+  color: black;
+  font-size: 1.8vw;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 800px) {
+  body main #menu .container .pricing h4 {
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #menu .container .pricing h4 {
+    font-size: 3.6vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body main #menu .container .pricing h4 {
+    font-size: 4.6vw;
+  }
+}
+
+body main #menu .container .pricing p {
+  padding-top: 8px;
+}
+
+body main #menu .container .pricing ul {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 1.3vw;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  padding: 8px 0;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  body main #menu .container .pricing ul {
+    width: 75%;
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body main #menu .container .pricing ul {
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body main #menu .container .pricing ul {
+    font-size: 2.8vw;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body main #menu .container .pricing ul {
+    font-size: 3.8vw;
+  }
+}
+
+body main #menu .container .pricing ul li {
+  padding-bottom: 6px;
+}
+
 body main #salivating {
   background: white;
   background-color: white;
@@ -751,10 +837,11 @@ body main #salivating .container {
 }
 
 body main #salivating .container h2 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 4.5vw;
   letter-spacing: 4px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -921,4 +1008,11 @@ body footer .container p {
 
 .spam-filter {
   margin: 0 auto 10px;
+}
+
+@media (max-width: 380px) {
+  .g-recaptcha {
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
 }
