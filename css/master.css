@@ -19,7 +19,7 @@ body #teachers a {
   font-size: 1vw;
   font-weight: 700;
   margin: 0 12px;
-  color: pink;
+  color: #e7e1da;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ body #teachers a {
 }
 
 body header {
-  background: pink;
+  background: white;
 }
 
 body header .container {
@@ -114,12 +114,12 @@ body header .container #menu a {
   font-weight: 400;
   line-height: 1.6;
   transition: .2s ease-in-out;
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid white;
 }
 
 body header .container #menu a:hover {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #765e67;
+  border-bottom: 2px solid #e7e1da;
 }
 
 body header .container #menu .active {
@@ -139,7 +139,8 @@ body header .container #order {
 
 body header .container #order a {
   text-decoration: none;
-  color: black;
+  color: white;
+  background: black;
   font-size: 16px;
   font-weight: 600;
   border: 2px solid black;
@@ -149,8 +150,9 @@ body header .container #order a {
 }
 
 body header .container #order a:hover {
-  color: pink;
-  background: black;
+  color: #e7e1da;
+  background: #765e67;
+  border-color: #e7e1da;
 }
 
 body header .container #mobile-btn {
@@ -182,8 +184,8 @@ body header .container #mobile-btn a {
 }
 
 body header .container #mobile-btn a:hover {
-  color: pink;
-  -webkit-text-stroke: 1px black;
+  color: #765e67;
+  -webkit-text-stroke: 1px #e7e1da;
 }
 
 body header .container #mobile-btn .mobile-open {
@@ -196,7 +198,7 @@ body header .container #mobile-btn .mobile-close {
 
 body #mobile-menu {
   display: none;
-  background: #ffb3bf;
+  background: #765e67;
 }
 
 body #mobile-menu .container {
@@ -211,14 +213,14 @@ body #mobile-menu .container {
 body #mobile-menu .container a {
   text-decoration: none;
   margin: 8px 0;
-  color: black;
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 2vw;
   padding: 8px 0;
   font-weight: 600;
   line-height: 1.6;
   transition: .2s ease-in-out;
-  border-bottom: 2px solid #ffb3bf;
+  border-bottom: 2px solid #765e67;
 }
 
 @media screen and (max-width: 650px) {
@@ -234,8 +236,8 @@ body #mobile-menu .container a {
 }
 
 body #mobile-menu .container a:hover {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #e7e1da;
+  border-bottom: 2px solid #e7e1da;
 }
 
 body #mobile-menu .container .active {
@@ -290,18 +292,20 @@ body #popup .container {
 body #popup .container .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background: pink;
-  background-color: pink;
+  justify-content: center;
+  background: #765e67;
+  background-color: #765e67;
   align-items: center;
-  padding: 12px 24px;
+  padding: 0 24px;
+  position: relative;
 }
 
 body #popup .container .header #exit {
-  color: black;
+  color: #e7e1da;
   font-size: 2vw;
   right: 15px;
   top: 10px;
+  position: absolute;
   transition: .3s ease-in-out;
 }
 
@@ -318,7 +322,7 @@ body #popup .container .header #exit {
 }
 
 body #popup .container .header #exit:hover {
-  -webkit-text-stroke: 1px pink;
+  -webkit-text-stroke: 1px black;
 }
 
 body #popup .container .header img {
@@ -499,11 +503,11 @@ body #popup .container form textarea:-ms-input-placeholder {
 }
 
 body #popup .container form input[type="submit"] {
-  color: black;
+  color: white;
   font-size: 1.4vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  background: pink;
+  background: black;
   border-radius: 5px;
   letter-spacing: 2px;
   padding: 6px 0;
@@ -541,8 +545,9 @@ body #popup .container form input[type="submit"] {
 }
 
 body #popup .container form input[type="submit"]:hover {
-  color: pink;
-  background-color: black;
+  border-color: #e7e1da;
+  color: #e7e1da;
+  background-color: #765e67;
 }
 
 body main {
@@ -588,7 +593,7 @@ body main #gather .container {
 }
 
 body main #gather .container .content {
-  background: pink;
+  background: white;
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -620,10 +625,11 @@ body main #gather .container .content {
 }
 
 body main #gather .container .content h1 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 3vw;
   color: black;
   letter-spacing: 4px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -695,7 +701,7 @@ body main #gather .container .content p br {
 
 body main #gather .container .content a {
   text-decoration: none;
-  color: pink;
+  color: white;
   font-size: 1.5vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -726,12 +732,13 @@ body main #gather .container .content a {
 }
 
 body main #gather .container .content a:hover {
-  color: black;
-  background: pink;
+  border-color: #e7e1da;
+  color: #e7e1da;
+  background: #765e67;
 }
 
 body main #all-foods {
-  background: white;
+  background: #765e67;
 }
 
 body main #all-foods .container {
@@ -773,10 +780,11 @@ body main #all-foods .container {
 
 body main #all-foods .container h1 {
   text-align: center;
-  font-family: "Flavors", cursive;
-  color: black;
+  font-family: "Dancing Script", cursive;
+  color: #e7e1da;
   font-size: 3vw;
   letter-spacing: 4px;
+  font-weight: 700;
   width: 80%;
   margin: 0 auto;
   padding-bottom: 26px;
@@ -809,7 +817,7 @@ body main #all-foods .container h1 {
 
 body main #all-foods .container p {
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
   font-weight: 300;
   font-size: 1.5vw;
   letter-spacing: 4px;
@@ -847,7 +855,7 @@ body main #all-foods .container p {
 
 body main #all-foods .container ul {
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
   font-weight: 600;
   font-size: 1.3vw;
   letter-spacing: 4px;
@@ -888,7 +896,7 @@ body main #all-foods .container ul li {
 }
 
 body main #from {
-  background: pink;
+  background: white;
 }
 
 body main #from .container {
@@ -926,11 +934,12 @@ body main #from .container #text-content {
 }
 
 body main #from .container #text-content h1 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 3vw;
   letter-spacing: 4px;
   padding-bottom: 26px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 975px) {
@@ -1040,34 +1049,51 @@ body main #from .container #text-content a {
 }
 
 body main #from .container #text-content a:hover {
-  color: black;
-  background: pink;
+  color: #e7e1da;
+  background: #765e67;
+  border-color: #e7e1da;
 }
 
 body main #from .container #img-content {
   width: 40%;
+  text-align: right;
 }
 
 @media screen and (max-width: 650px) {
   body main #from .container #img-content {
     width: 100%;
+    text-align: center;
   }
 }
 
-body main #from .container #img-content img {
-  width: 100%;
+body main #from .container #img-content .desk-img {
+  width: 90%;
   border-radius: 3px;
+  vertical-align: bottom;
 }
 
 @media screen and (max-width: 650px) {
-  body main #from .container #img-content img {
+  body main #from .container #img-content .desk-img {
+    display: none;
+  }
+}
+
+body main #from .container #img-content .mobile-img {
+  width: 100%;
+  border-radius: 3px;
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  body main #from .container #img-content .mobile-img {
     padding-top: 15%;
+    display: block;
   }
 }
 
 body main #wakeup {
-  background: white;
-  background-color: white;
+  background: #765e67;
+  background-color: #765e67;
 }
 
 body main #wakeup .container {
@@ -1085,11 +1111,12 @@ body main #wakeup .container {
 
 body main #wakeup .container h1 {
   text-align: center;
-  font-family: "Flavors", cursive;
-  color: black;
+  font-family: "Dancing Script", cursive;
+  color: #e7e1da;
   font-size: 3vw;
   letter-spacing: 4px;
   padding-bottom: 18px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -1113,7 +1140,7 @@ body main #wakeup .container h1 {
 body main #wakeup .container p {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
   font-weight: 300;
   font-size: 1.5vw;
   letter-spacing: 4px;
@@ -1183,10 +1210,11 @@ body main #wakeup .container .services .serv img {
 }
 
 body main #wakeup .container .services .serv h4 {
-  font-family: "Flavors", cursive;
-  color: black;
+  font-family: "Dancing Script", cursive;
+  color: #e7e1da;
   font-size: 1.8vw;
   letter-spacing: 4px;
+  font-weight: 700;
   padding: 26px 0 16px;
 }
 
@@ -1210,7 +1238,7 @@ body main #wakeup .container .services .serv h4 {
 
 body main #wakeup .container .services .serv p {
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
   font-weight: 300;
   font-size: 1.2vw;
   letter-spacing: 4px;
@@ -1264,8 +1292,8 @@ body main #sub-footer {
 }
 
 body footer {
-  background: pink;
-  background-color: pink;
+  background: white;
+  background-color: white;
 }
 
 body footer .container {
@@ -1331,6 +1359,15 @@ body footer .container p {
 
 .spam-filter {
   margin: 0 auto 10px;
+}
+
+@media (max-width: 380px) {
+  .g-recaptcha {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
 }
 
 body {
@@ -1625,11 +1662,12 @@ body #popup .container {
 body #popup .container .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   background: pink;
   background-color: pink;
   align-items: center;
-  padding: 12px 24px;
+  padding: 0 24px;
+  position: relative;
 }
 
 body #popup .container .header #exit {
@@ -1637,6 +1675,7 @@ body #popup .container .header #exit {
   font-size: 2vw;
   right: 15px;
   top: 10px;
+  position: absolute;
   transition: .3s ease-in-out;
 }
 
@@ -1916,10 +1955,11 @@ body main #menu .container {
 
 body main #menu .container h1 {
   text-align: center;
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 4.5vw;
   letter-spacing: 4px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -2011,9 +2051,10 @@ body main #menu .container #items .item {
 }
 
 body main #menu .container #items .item h4 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 1.8vw;
+  font-weight: 700;
   letter-spacing: 4px;
 }
 
@@ -2082,11 +2123,13 @@ body main #menu .container .pricing {
 }
 
 body main #menu .container .pricing h4 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 1.8vw;
   letter-spacing: 4px;
   text-align: center;
+  font-weight: 700;
+  padding-bottom: 16px;
 }
 
 @media screen and (max-width: 800px) {
@@ -2166,10 +2209,11 @@ body main #salivating .container {
 }
 
 body main #salivating .container h2 {
-  font-family: "Flavors", cursive;
+  font-family: "Dancing Script", cursive;
   color: black;
   font-size: 4.5vw;
   letter-spacing: 4px;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -2336,4 +2380,13 @@ body footer .container p {
 
 .spam-filter {
   margin: 0 auto 10px;
+}
+
+@media (max-width: 380px) {
+  .g-recaptcha {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
 }

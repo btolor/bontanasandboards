@@ -19,7 +19,7 @@ body #teachers a {
   font-size: 1vw;
   font-weight: 700;
   margin: 0 12px;
-  color: pink;
+  color: #e7e1da;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ body #teachers a {
 }
 
 body header {
-  background: pink;
+  background: white;
 }
 
 body header .container {
@@ -114,17 +114,17 @@ body header .container #menu a {
   font-weight: 400;
   line-height: 1.6;
   transition: .2s ease-in-out;
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid white;
 }
 
 body header .container #menu a:hover {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #765e67;
+  border-bottom: 2px solid #e7e1da;
 }
 
 body header .container #menu .active {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #765e67;
+  border-bottom: 2px solid #e7e1da;
 }
 
 body header .container #order {
@@ -139,7 +139,8 @@ body header .container #order {
 
 body header .container #order a {
   text-decoration: none;
-  color: black;
+  color: white;
+  background: black;
   font-size: 16px;
   font-weight: 600;
   border: 2px solid black;
@@ -149,8 +150,9 @@ body header .container #order a {
 }
 
 body header .container #order a:hover {
-  color: pink;
-  background: black;
+  color: #e7e1da;
+  background: #765e67;
+  border-color: #e7e1da;
 }
 
 body header .container #mobile-btn {
@@ -182,8 +184,8 @@ body header .container #mobile-btn a {
 }
 
 body header .container #mobile-btn a:hover {
-  color: pink;
-  -webkit-text-stroke: 1px black;
+  color: #765e67;
+  -webkit-text-stroke: 1px #e7e1da;
 }
 
 body header .container #mobile-btn .mobile-open {
@@ -196,7 +198,7 @@ body header .container #mobile-btn .mobile-close {
 
 body #mobile-menu {
   display: none;
-  background: #ffb3bf;
+  background: #765e67;
 }
 
 body #mobile-menu .container {
@@ -211,14 +213,14 @@ body #mobile-menu .container {
 body #mobile-menu .container a {
   text-decoration: none;
   margin: 8px 0;
-  color: black;
+  color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 2vw;
   padding: 8px 0;
   font-weight: 600;
   line-height: 1.6;
   transition: .2s ease-in-out;
-  border-bottom: 2px solid #ffb3bf;
+  border-bottom: 2px solid #765e67;
 }
 
 @media screen and (max-width: 650px) {
@@ -239,8 +241,8 @@ body #mobile-menu .container a:hover {
 }
 
 body #mobile-menu .container .active {
-  color: white;
-  border-bottom: 2px solid white;
+  color: #e7e1da;
+  border-bottom: 2px solid #e7e1da;
 }
 
 body #popup {
@@ -270,8 +272,8 @@ body #popup {
 body #popup .container {
   width: 45%;
   margin: 0 auto;
-  background: white;
-  background-color: white;
+  background: #765e67;
+  background-color: #765e67;
   border-radius: 3px;
 }
 
@@ -291,15 +293,15 @@ body #popup .container .header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: pink;
-  background-color: pink;
+  background: white;
+  background-color: white;
   align-items: center;
   padding: 0 24px;
   position: relative;
 }
 
 body #popup .container .header #exit {
-  color: black;
+  color: #765e67;
   font-size: 2vw;
   right: 15px;
   top: 10px;
@@ -317,10 +319,6 @@ body #popup .container .header #exit {
   body #popup .container .header #exit {
     font-size: 6vw;
   }
-}
-
-body #popup .container .header #exit:hover {
-  -webkit-text-stroke: 1px pink;
 }
 
 body #popup .container .header img {
@@ -345,8 +343,9 @@ body #popup .container form {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.8);
+  background: #765e67;
+  background-color: #765e67;
+  color: white;
   position: relative;
   padding: 4% 0;
 }
@@ -501,11 +500,11 @@ body #popup .container form textarea:-ms-input-placeholder {
 }
 
 body #popup .container form input[type="submit"] {
-  color: black;
+  color: white;
   font-size: 1.4vw;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  background: pink;
+  background: black;
   border-radius: 5px;
   letter-spacing: 2px;
   padding: 6px 0;
@@ -543,13 +542,14 @@ body #popup .container form input[type="submit"] {
 }
 
 body #popup .container form input[type="submit"]:hover {
-  color: pink;
-  background-color: black;
+  border-color: #e7e1da;
+  color: #e7e1da;
+  background-color: #765e67;
 }
 
 body main {
-  background: white;
-  background-color: white;
+  background: #765e67;
+  background-color: #765e67;
 }
 
 body main #story .container {
@@ -583,6 +583,7 @@ body main #story .container h1 {
   letter-spacing: 4px;
   padding: 20px 0;
   font-weight: 700;
+  color: #e7e1da;
 }
 
 @media screen and (max-width: 800px) {
@@ -605,7 +606,7 @@ body main #story .container h1 {
 
 body main #story .container p {
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
   font-weight: 300;
   font-size: 1.5vw;
   letter-spacing: 4px;
@@ -660,6 +661,11 @@ body main #about-img {
   }
 }
 
+body main #service-area {
+  background: #765e67;
+  background-color: #765e67;
+}
+
 body main #service-area .container {
   text-align: center;
   width: 75%;
@@ -686,6 +692,7 @@ body main #service-area .container h1 {
   letter-spacing: 4px;
   padding-bottom: 26px;
   font-weight: 700;
+  color: #e7e1da;
 }
 
 @media screen and (max-width: 800px) {
@@ -760,6 +767,7 @@ body main #service-area .container .block-container #blocks .block h3 {
   letter-spacing: 4px;
   font-weight: 700;
   padding-top: 10px;
+  color: #e7e1da;
 }
 
 @media screen and (max-width: 800px) {
@@ -789,7 +797,7 @@ body main #service-area .container .block-container #blocks .block h3 {
 
 body main #service-area .container p {
   font-family: "Open Sans", sans-serif;
-  color: black;
+  color: white;
   text-align: center;
   font-weight: 300;
   font-size: 1.2vw;
@@ -910,13 +918,14 @@ body main #service-area .container a {
 }
 
 body main #service-area .container a:hover {
-  color: black;
-  background: pink;
+  color: #e7e1da;
+  border-color: #e7e1da;
+  background: #765e67;
 }
 
 body footer {
-  background: pink;
-  background-color: pink;
+  background: white;
+  background-color: white;
 }
 
 body footer .container {
@@ -981,8 +990,8 @@ body footer .container .icons a {
 }
 
 body footer .container .icons a:hover {
-  color: pink;
-  -webkit-text-stroke: 1px black;
+  color: #e7e1da;
+  -webkit-text-stroke: 1px #765e67;
 }
 
 body footer .container p {

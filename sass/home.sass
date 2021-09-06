@@ -13,7 +13,7 @@ body
             font-size: 1vw
             font-weight: 700
             margin: 0 12px
-            color: pink
+            color: $toupe
             text-decoration: none
             @include media-max(1300px)
                 font-size: 1.2vw
@@ -23,7 +23,7 @@ body
                 font-size: 1.8vw
     // Header Styles...
     header 
-        background: pink
+        background: white
         .container
             @include center(75%, 0 auto)
             @include fullFlex(flex,row,space-between)
@@ -58,10 +58,10 @@ body
                     font-weight: 400
                     line-height: 1.6
                     transition: .2s ease-in-out
-                    border-bottom: 2px solid pink
+                    border-bottom: 2px solid white
                     &:hover
-                        color: white
-                        border-bottom: 2px solid white
+                        color: $accent
+                        border-bottom: 2px solid $toupe
                 .active
                     color: white
                     border-bottom: 2px solid white
@@ -72,7 +72,8 @@ body
                     display: none
                 a 
                     text-decoration: none
-                    color: black
+                    color: white
+                    background: black
                     font-size: 16px
                     font-weight: 600
                     border: 2px solid black 
@@ -80,8 +81,9 @@ body
                     transition: .2s ease-in-out
                     border-radius: 5px
                     &:hover
-                        color: pink
-                        background: black
+                        color: $toupe
+                        background: $accent
+                        border-color: $toupe
             // Mobile Button Styles...
             #mobile-btn
                 display: none
@@ -96,15 +98,15 @@ body
                     color: black
                     transition: .2s ease-in-out
                     &:hover
-                        color: pink
-                        -webkit-text-stroke: 1px black
+                        color: $accent
+                        -webkit-text-stroke: 1px $toupe
                 .mobile-open
                     display: block
                 .mobile-close
                     display: none
     #mobile-menu  
         display: none  
-        background: #ffb3bf
+        background: $accent
         .container  
             @include center(75%, 0 auto)
             @include flex(flex,column)
@@ -113,21 +115,21 @@ body
             a 
                 text-decoration: none
                 margin: 8px 0
-                color: black
+                color: white
                 font-family: $text-font
                 font-size: 2vw
                 padding: 8px 0
                 font-weight: 600
                 line-height: 1.6
                 transition: .2s ease-in-out
-                border-bottom: 2px solid #ffb3bf
+                border-bottom: 2px solid $accent
                 @include media-max(650px)
                     font-size: 3vw
                 @include media-max(450px)
                     font-size: 4vw
                 &:hover
-                    color: white
-                    border-bottom: 2px solid white
+                    color: $toupe
+                    border-bottom: 2px solid $toupe
             .active 
                 color: white
                 border-bottom: 2px solid white
@@ -147,8 +149,8 @@ body
             padding-top: 2%
         .container
             @include center(45%, 0 auto)
-            background: white
-            background-color: white
+            background: $accent
+            background-color: $accent
             border-radius: 3px
             @include media-max(1024px)
                 width: 65%
@@ -156,13 +158,13 @@ body
                 width: 95%
             .header
                 @include fullFlex(flex, row,center)
-                background: pink 
-                background-color: pink 
+                background: white
+                background-color: white
                 align-items: center
                 padding: 0 24px
                 position: relative
                 #exit
-                    color: black
+                    color: $accent
                     font-size: 2vw
                     right: 15px
                     top: 10px
@@ -172,8 +174,7 @@ body
                         font-size: 3vw
                     @include media-max(650px)
                         font-size: 6vw
-                    &:hover
-                        -webkit-text-stroke: 1px pink
+                   
                 img 
                     width: 9vw 
                     @include media-max(1024px)
@@ -184,10 +185,11 @@ body
                 border-radius: 3px
                 @include flex(flex,column)
                 @include center(80%, 0 auto)
-                background: rgba(255, 255, 255, .8)
-                background-color: rgba(255, 255, 255, .8)
+                background: $accent
+                background-color: $accent
                 position: relative
                 padding: 4% 0
+                color: white
                 @include media-max(650px)
                     width: 90%
                 h6
@@ -240,11 +242,11 @@ body
                     @include placeholder-color(black)
                     margin-bottom: 16px
                 input[type="submit"]
-                    color: black
+                    color: white
                     font-size: 1.4vw
                     font-family: $text-font
                     font-weight: 600
-                    background: pink
+                    background: black
                     border-radius: 5px
                     letter-spacing: 2px
                     padding: 6px 0
@@ -263,8 +265,9 @@ body
                         font-size: 3.9vw
                         width: 50%
                     &:hover
-                        color: pink
-                        background-color: black
+                        border-color: $toupe
+                        color: $toupe
+                        background-color: $accent
     // Main Styles... 
     main
         position: relative
@@ -287,7 +290,7 @@ body
                 @include media-max(650px)
                     width: 90%
                 .content 
-                    background: pink
+                    background: white
                     text-align: center
                     @include center(60%, 0 auto)
                     padding: 60px 0
@@ -340,7 +343,7 @@ body
                                 display: block
                     a 
                         text-decoration: none 
-                        color: pink 
+                        color: white
                         font-size: 1.5vw 
                         font-family: $text-font
                         font-weight: 600
@@ -357,10 +360,11 @@ body
                         @include media-max(450px)
                             font-size: 4vw
                         &:hover
-                            color: black
-                            background: pink
+                            border-color: $toupe
+                            color: $toupe
+                            background: $accent
         #all-foods 
-            background: white
+            background: $accent
             .container
                 @include center(75%, 0 auto)
                 padding: 200px 0 80px  
@@ -378,7 +382,7 @@ body
                 h1
                     text-align: center
                     font-family: $header-font
-                    color: black
+                    color: $toupe
                     font-size: 3vw
                     letter-spacing: 4px
                     font-weight: 700
@@ -395,7 +399,7 @@ body
                         font-size: 6vw               
                 p
                     font-family: $text-font
-                    color: black
+                    color: white
                     font-weight: 300
                     font-size: 1.5vw
                     letter-spacing: 4px
@@ -414,7 +418,7 @@ body
                         font-size: 4vw
                 ul 
                     font-family: $text-font
-                    color: black
+                    color: white
                     font-weight: 600
                     font-size: 1.3vw
                     letter-spacing: 4px
@@ -434,7 +438,7 @@ body
                     li 
                         padding-bottom: 6px
         #from
-            background: pink
+            background: white
             .container  
                 @include center(75%, 0 auto)
                 @include fullFlex(flex,row,space-between)
@@ -508,8 +512,9 @@ body
                         @include media-max(450px)
                             font-size: 4vw
                         &:hover
-                            color: black
-                            background: pink
+                            color: $toupe
+                            background: $accent
+                            border-color: $toupe
                 #img-content 
                     width: 40%
                     text-align: right
@@ -531,8 +536,8 @@ body
                             display: block
         //Wakeup Styles...
         #wakeup 
-            background: white
-            background-color: white
+            background: $accent
+            background-color: $accent
             .container
                 @include center(75%, 0 auto)
                 padding: 80px 0 30px
@@ -542,7 +547,7 @@ body
                 h1
                     text-align: center
                     font-family: $header-font
-                    color: black
+                    color: $toupe
                     font-size: 3vw
                     letter-spacing: 4px
                     padding-bottom: 18px  
@@ -556,7 +561,7 @@ body
                 p 
                     text-align: center    
                     font-family: $text-font
-                    color: black
+                    color: white
                     font-weight: 300
                     font-size: 1.5vw
                     letter-spacing: 4px
@@ -590,7 +595,7 @@ body
                                 width: 100%
                         h4
                             font-family: $header-font
-                            color: black
+                            color: $toupe
                             font-size: 1.8vw
                             letter-spacing: 4px
                             font-weight: 700
@@ -603,7 +608,7 @@ body
                                 font-size: 4.6vw    
                         p   
                             font-family: $text-font
-                            color: black
+                            color: white
                             font-weight: 300
                             font-size: 1.2vw
                             letter-spacing: 4px
@@ -630,8 +635,8 @@ body
                 height: 250px           
     //Footer Styles...    
     footer 
-        background: pink
-        background-color: pink
+        background: white
+        background-color: white
         .container
             @include center(75%, 0 auto)
             padding: 20px 0
@@ -658,8 +663,8 @@ body
                     margin: 0 18px
                     transition: .2s ease-in-out
                     &:hover
-                        color: pink
-                        -webkit-text-stroke: 1px black
+                        color: $toupe
+                        -webkit-text-stroke: 1px $accent
             p
                 text-align: center
                 font-family: $text-font
